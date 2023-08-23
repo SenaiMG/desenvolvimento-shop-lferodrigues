@@ -6,7 +6,7 @@ class Site(models.Model):
     nome_card = models.CharField(max_length=200)
     description =  models.TextField()
     path = models.TextField()
-    figura = models.ImageField()
+    figura = models.ImageField(static)
     segundo_texto = models.TextField()
     date_create = models.DateTimeField(default=datetime.now, blank =True)
 
